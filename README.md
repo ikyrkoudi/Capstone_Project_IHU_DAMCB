@@ -1,21 +1,38 @@
-This is my Capstone Project for the course 'Data Analytics in Modern Corporate Business' by International Hellenic University.
+# 🎓 Capstone Project: Data Analytics in Modern Corporate Business
+**International Hellenic University**
 
-Project Overview:
+---
 
-1. Data Source:
-○ Pagila transactional database, stored in a PostgreSQL environment.
+## 📝 Project Overview
+This repository contains the source code and automation scripts for my final Capstone Project. The project establishes a robust end-to-end data engineering and analytics pipeline, moving data from a transactional database into a cloud data warehouse for transformation, automation, and business intelligence reporting.
 
-2. Data Replication:
-○ Continuous data replication from PostgreSQL to Google BigQuery using Google Datastream.
+---
 
-3. Data Transformation and Analysis:
-○ BigQuery for data transformations and analysis.
-○ Python notebooks (.ipynb) files converted to python (.py) files , to handle additional ETL (Extract, Transform, Load) tasks and automation workflows.
-○ Notebooks through Jupyter Notebook locally, reading from BigQuery data warehouse.
-○ Python files scheduled using cron jobs.
+## 📌 Architecture & Tech Stack
 
-4. Version Control:
-○ Git to manage Python .py files and upload them to this GitHub repository.
+### 1. Data Source
+* **Database:** `Pagila` transactional database.
+* **Environment:** Hosted in a **PostgreSQL** environment.
 
-5. Data Visualization:
-○ Data used in Tableau Cloud and Metabase dashboards.
+### 2. Data Replication
+* **Ingestion:** Continuous data replication (CDC) from PostgreSQL to the cloud.
+* **Tooling:** **Google Datastream** seamlessly streams data into the data warehouse.
+
+### 3. Data Transformation & Analysis
+* **Data Warehouse:** **Google BigQuery** handles heavy data transformations and analytical queries.
+* **Development:** **Jupyter Notebooks (`.ipynb`)** used locally for initial prototyping, reading directly from BigQuery.
+* **Production/ETL:** Notebooks are converted to **Python (`.py`)** scripts to manage advanced ETL tasks and automation workflows.
+* **Orchestration:** Python scripts are automated and scheduled using **Cron jobs**.
+
+### 4. Version Control
+* **Tool:** **Git** & **GitHub**.
+* **Scope:** Version tracking for all production-ready Python (`.py`) automation scripts and project documentation.
+
+### 5. Data Visualization
+* **Dashboards:** Transformed data is connected to **Tableau Cloud** and **Metabase** to build interactive business intelligence dashboards.
+
+---
+
+## 📁 Repository Structure
+* `/scripts` — Contains the productionized `.py` files used for ETL and automation.
+* `/notebooks` — Contains the original `.ipynb` files used for data exploration and prototyping.
